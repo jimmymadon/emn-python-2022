@@ -39,6 +39,3 @@ print("Length of students_marks after append:", len(students_marks))
 students_marks.insert(2,10)
 print("students_marks[2]:",  students_marks[2])
 print("Length of students_marks after insert:", len(students_marks))
-
-
-## Tuples ##

@@ -1,17 +1,29 @@
 print("""
 Menu:
-1: Addition
-2: Subtraction
-3: Multiplication
-4: Division
+add: Addition
+sub: Subtraction
+mul: Multiplication
+div: Division
+quit: Quit the program
 """)
 
+valid_operations = ["add","sub","mul","div","quit"]
+
+# When there is a loop within a loop, the break statement takes you
+# out of the 'nearest' loop that you are in.
 while True:
-  chosen_operation = int(input("Enter a number from the above menu: "))
-  if (chosen_operation < 1 or chosen_operation > 4):
-    print("Invalid Option. Please retry!")
-  else:
+  chosen_operation = input("Enter an operation from the above menu: ")
+
+  isMatchFound = False
+  for valid_operation in valid_operations:
+    if (chosen_operation == valid_operation):
+      isMatchFound = True
+      break
+
+  if (isMatchFound):
     break
+  else:
+    print("Invalid Operation! Please try again!")
 
 # Taking string input and casting (converting) them to int
 number1 = int(input("Enter the first number: "))

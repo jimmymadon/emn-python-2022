@@ -43,30 +43,3 @@ print()
 # Find the position of an item in a list
 print("Position of 10.00:", bank_balances.index(11001.90))
 print()
-
-# Create a list of words from the below list that are greater than 4 characters
-words = ["hello", "but", "merci", "and", "oxford", "goodbye", "salut"]
-filtered_words = []
-for word in words:
-  if (len(word) > 4):
-    filtered_words.append(word)
-print("List with less than 4 letter words using for:", filtered_words)
-print()
-
-filtered_words2 = []
-index = 0
-while index < len(words):
-  if (len(words[index]) > 4):
-    filtered_words2.append(words[index])
-  index = index + 1
-print("List with less than 4 letter words using while:", filtered_words2)
-
-filtered_words3 = []
-index = 0
-while True:
-  if (index < len(words)):
-    break
-  if (len(words[index]) > 4):
-    filtered_words3.append(words[index])
-  index = index + 1
-print("List with less than 4 letter words using infinite while:", filtered_words2)
