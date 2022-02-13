@@ -1,3 +1,5 @@
+# Define and call functions for each of the operations (add, subtract, multiply and divide)
+
 print("""
 Menu:
 1: Addition

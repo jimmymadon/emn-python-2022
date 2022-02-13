@@ -43,3 +43,21 @@ print()
 # Find the position of an item in a list
 print("Position of 10.00:", bank_balances.index(11001.90))
 print()
+
+
+# Looping 5 times using for and a list of numbers
+print("Repeat an action 5 times using a simple list of numbers")
+list = [0,1,2,3,4]
+for x in list:
+  print(x)
+
+print()
+print("Repeat an action using for loop and range()")
+# Looping 5 times using for and the range function which creates a list automatically
+for x in range(0,5,1):
+  print (x)
+
+print()
+# The default start is '0' and default 'step' is 1. So only supply the 'stop'.
+for x in range(5):
+  print (x)
