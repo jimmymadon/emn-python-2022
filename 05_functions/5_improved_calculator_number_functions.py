@@ -1,4 +1,19 @@
 # Define and call functions for each of the operations (add, subtract, multiply and divide)
+def add(num1, num2):
+  return num1 + num2
+
+def subtract(num1, num2):
+  return num1 - num2
+
+def multiply(num1, num2):
+  return num1 * num2
+
+def divide(num1, num2):
+  return num1 / num2
+
+# All the above functions are of int / float type
+result = add(10, 12)
+print("Return type of the add function:", type(result))
 
 print("""
 Menu:
@@ -20,15 +35,12 @@ number1 = int(input("Enter the first number: "))
 number2 = int(input("Enter the second number: "))
 
 if chosen_operation == 1:
-    #add(number1, number2)
-    addition_result = number1 + number2
-    print("Addition Result: " + str(addition_result))
+    result = add(number1, number2)
+    print("Addition result:", result)
 elif chosen_operation == 2:
-    subtraction_result = number1 - number2
-    print("Subtraction Result: " + str(subtraction_result))
+    print("Subtraction result:", subtract(number1, number2))
 elif chosen_operation == 3:
-    multiplication_result = number1 * number2
-    print("Multiplication Result: ", multiplication_result)
+    print("Multiplication result:", multiply(number1, number2))
 elif chosen_operation == 4:
-    division_result = number1 / number2
-    print("Division Result: ", division_result)
+    print("Division result:", divide(number1, number2))
+
