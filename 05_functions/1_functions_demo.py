@@ -83,3 +83,17 @@ print("4 + 7 = ", add(4, 7))
 print("4.5 + 5.5 = ", add(4.5, 5.5))
 
 print(add("hello", "world"))
+
+
+# ** Function Terminology **
+
+# INPUT VARIABLES = PARAMETERS (The variables defined inside the brackets when DEFINING/CREATING a function)
+def function_name(param1, param2):
+  print(param1)
+  print(param2)
+
+# INPUT VALUES = ARGUMENTS (Values passed when CALLING or USING the function)
+function_name(23, 45)
+
+#OUTPUT = RETURN VALUE
+#OUTPUT TYPE = RETURN TYPE
